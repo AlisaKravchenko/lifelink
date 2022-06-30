@@ -1,0 +1,1271 @@
+html{
+	font-size: 10px;
+	
+}
+
+
+a {
+  color: #000 ;
+  text-decoration: none
+}
+
+a:hover, button:hover{
+	text-decoration: none;
+	cursor: pointer;
+	color: #000;
+}
+button:focus, input:focus, a:focus, select:focus{
+	outline: none;
+	text-decoration: none;
+
+}
+// Шапка
+.header{
+    margin-top: 2rem;
+    height: 8rem;
+    display: block;
+	&-logo-img{
+		max-width: 15rem;
+		display: inline-block;
+	}
+	&-logo-text{
+		font-family: Balsamiq Sans, sans-serif;
+		font-style: 400;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: inline-block;
+        height: 8rem;
+        line-height: 8rem;
+        letter-spacing: 0.2rem;
+        font-size: 3rem;
+        text-align: center;
+        &-part1{
+        	color: #1E880D
+		}
+		&-part2{
+			color: #fd961e;
+		}
+
+
+	}
+	&-sale{
+		& img{
+			max-width: 4rem;
+			margin-top: -1rem;
+		}
+		&-text{
+		display: inline-block;
+		font-family: Oswald, sans-serif;
+		font-weight: 500;
+		font-size: 1.8rem;
+		height: 8rem;
+		line-height: 8rem;
+        margin-left: 1rem;
+		}
+	}
+	&-phone{
+		height: 8rem;
+        line-height: 8rem;
+		&-img{
+			display: inline-block;
+			margin-right: 1rem;
+			text-align: center;
+			margin-top: -0.7rem;
+		}
+		&-text{
+			display: inline-block;
+			font-family: Oswald, sans-serif;
+			font-weight: 400;
+			font-size: 1.6rem;
+		}
+	}
+	&-call{
+		font-family: Oswald, sans-serif;
+		font-weight: bold;
+		font-size: 1.5rem;
+		background-color: #eafc7e;
+		border-radius: 0.5rem;
+		min-width: 20rem;
+		min-height: 4rem;
+		text-align: center;
+		transition: all, 0.3s;
+		&:hover{
+			background-color: darken(#eafc7e, 10%);
+			cursor: pointer;
+
+		}
+	}
+}
+.call-wrap{
+	display: table;
+	width: 100%;
+	height: 8rem;
+	&-block{
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Навигация
+.nav{
+	display: flex;
+	justify-content: center;
+	&-wrap{
+		position: relative;
+		z-index: 2;
+		background-color: #f9f9f9;
+		margin: 1rem 0;
+		padding: 2rem 0;
+		border-radius: 0px 0px 15px 15px;
+	}	
+
+	& a{
+	font-family: Oswald, sans-serif;
+	font-weight: 500;
+	font-size: 1.5rem;	
+
+	color: #000;
+	}
+	&-element{
+		padding: 0 2.5rem;
+		border-right: 2px solid #979797;
+
+		&-last{
+			padding: 0 2.5rem;
+
+		}
+	}
+	& a{
+		&:hover{
+			color: lighten(#000, 30%);
+		}
+	}
+}
+
+
+
+
+// Head
+.head{
+	position: relative;
+	z-index: 1;
+	background: url(../img/head-fon.png) center no-repeat;
+	margin-top: -2rem;
+	min-height: 50rem;
+	background-size: cover;
+	&-text-section:before{
+		content: "";
+		position: absolute;
+		left: 0;	
+    	top: 0;
+    	width: 100%;
+    	height: 13rem;
+		background: rgba(132, 132, 132, 0.28);
+		filter: blur(4px);
+		border-radius: 1rem;
+		z-index: -1;
+		margin-top: 9rem;
+		}
+	&-text-section{
+		color: #fff;
+		margin-top: 10rem;
+		font-family: Oswald, sans-serif;
+		font-weight: bold;
+		font-size: 2.2rem;
+		letter-spacing: 0.05rem;
+		padding: 1rem;
+		&-part2{
+			font-weight: 500;
+			font-size: 1.5rem;
+		}
+	}
+	&-text-btn1, &-text-btn2{
+		color: #fff;
+		font-family: Oswald, sans-serif;
+		font-weight: 500;
+		font-size: 1.3rem;
+		background-color: #1E880D;
+		letter-spacing: 0.05rem;
+		margin-top: 5rem;
+		margin-left: -2rem;
+		padding: 1rem 4rem;
+		border-radius: 1rem;
+		&:hover{
+			color:darken(#fff, 20%);
+		}
+	}
+	&-text-btn2{
+		background-color: transparent;
+		color: #fff;
+		border: 1px solid #fff;
+		padding: 1rem;
+		margin-left: 2rem;
+		&:hover{
+			border: 1px solid darken(#fff, 20%);
+		}
+		& img{
+			width: 7%;
+			margin-left: 0.7rem;
+		}
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+// head-news
+.index-news{
+	font-family: Oswald, sans-serif;
+	letter-spacing: 0.05rem;
+	line-height: 2;
+	background-color: #F3F3F3;
+	border-radius: 1rem;
+	margin: 3rem 1rem;
+	padding: 2rem 4rem;
+	min-height: 58.5rem;
+	&-content{
+		
+	}
+	&-header{
+		& p{	
+			font-size: 2rem;
+			font-weight: bold;
+			display: inline-block;
+			
+		}
+		& img{
+			max-width: 7rem;
+			margin-left: 3rem;
+			margin-top: -1rem;
+		}
+	}
+	&-items{
+		margin-left: 3rem;
+		margin-top: 1.5rem;
+		& h4{
+			font-weight: bold;
+		}
+		& p{
+			font-weight: 500;
+			font-size: 1.1rem;
+			margin-bottom: 4rem;
+			& .blue{
+				color: #3457d5;
+			}
+			& .orangе{
+				color: #fb8a59;
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// footer
+.footer{
+	background-color: #1F1F1F;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	padding: 5rem 5rem 2rem 5rem;
+	color: #fff;
+	&-sale{
+		
+		padding: 0;
+		
+		& img, & table{
+			display: inline-block;
+		}
+		&-wrap{
+		margin-top: 2rem;
+
+		}
+		& th img{
+			margin-left: 2rem;
+		}
+		& p{
+			font-size: 1.3rem;
+			display: inline-block;
+		}
+	}
+	
+	&-sale-text{
+		font-size: 1rem;
+		font-family: Oswald, sans-serif;
+	}
+	&-nav{
+
+		display: flex;
+		justify-content: center;
+		& a{
+			color: #fff;
+			font-size: 1.5rem;
+			font-weight: 400;
+		}
+		&-wrap{
+			background-color: #1F1F1F;
+			margin-top: 2rem;
+		}
+		&-element{
+			border-right: none;
+			padding: 2rem;
+		}		
+	}
+	&-scroll-up{
+
+		& img{
+			max-width: 5rem;
+		}
+		& button{
+			margin-top: 1rem;
+			button:focus{
+				text-decoration: none;			}
+		}
+		
+	}
+	&-text{
+		font-size: 1.1rem;
+		text-align: center;
+	}
+	&-call{
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// internet
+.inet{
+
+	&-nav{
+		margin-top: 3rem;
+		& ul{
+			list-style-type: none;
+			padding: 0;
+			& li{
+				display: inline-block;
+				& a{
+					font-family: Oswald, sans-serif;
+					font-size: 1.3rem;
+					margin-right: 5rem;
+					color: #000;
+					border-bottom: 1px solid #000;
+				}
+			}
+		}
+	}
+	&-text{
+		margin-top: 2rem;
+		
+		& p{
+			font-family: Oswald, sans-serif;
+			font-weight: 500;
+			font-size: 1.1rem;
+			letter-spacing: 0.04rem;
+			line-height: 162.2%;
+		}
+		&-green{
+			color: #1e880d;
+			line-height: 2.5rem;
+		}
+
+		&-edge{
+			margin-bottom: 2rem;
+		}
+		&-blue{
+			color: #60C2C2;
+			line-height: 2.5rem;
+		}
+	}
+
+	&-text-main{
+		& img{
+			max-width: 3.5rem;
+			display: inline-block;
+			margin-top: 1rem;
+			margin-bottom: 0.5rem;
+		}
+		& h4{
+			display: inline-block;
+			font-family: Oswald, sans-serif;
+			font-weight: 700;
+			letter-spacing: 0.05rem;
+			margin-left: 1rem;
+		}
+	}
+
+	&-slider{
+		&-head{
+			font-family: Oswald, sans-serif;
+			letter-spacing: 0.05rem;
+			margin: 3rem 0;
+		}
+
+		&-img{
+			max-width: 25rem;
+			display: block;
+			margin: auto;
+			&-icon{
+				padding-top: 1.1rem;
+			}
+
+
+			
+		}
+		&-block{
+			display: inline-block;
+			background-color: #F9F9F9;
+			
+			margin-bottom: 1rem;
+			margin-right: 1rem;
+			transition: all 0.7s;
+			&:hover{
+				box-shadow: 5px 4px 20px rgba(253, 150, 30, 0.7);
+			}
+			&:focus {
+					outline: none;
+				}
+			&-wrap{
+				padding: 2rem 0;
+				
+			}
+			& ul{
+			display: flex;
+			justify-content: center;
+			padding: 0;
+
+				& li{
+					list-style-type: none;
+					display: inline-block;
+					margin-right: 1rem;
+
+					
+				}
+			}
+
+			& p{
+				font-family: Oswald, sans-serif;
+				text-align: center;
+				font-weight: 500;
+				font-size: 1.4rem;				
+			}
+			& button{
+				display: block;
+				margin: 0 auto;
+
+			}
+		}
+		
+		
+	
+	}
+	&-sliders-content{
+		margin-bottom: 3rem;
+	}
+}
+
+
+//для вашего бизнеса
+.business{
+	&-main{
+		& img{
+			max-width: 5rem;
+			display: inline-block;
+			margin-right: 2rem;
+		}
+		&-text{
+			display: inline-block;
+
+		}
+		margin-bottom: 3rem;
+	}
+	&-slider-block{
+		margin-right: 5rem;
+	}
+	
+	
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//телевидение
+.tv{
+	&-info{
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+	}
+	&-search{
+		&-content{
+			background-color: rgba(96, 194, 194, 0.32);
+		}
+		&-label{
+			font-size: 1.8rem;
+			margin: 0.5rem;
+		}
+		& label{
+			font-family: Oswald, sans-serif;
+			font-weight: 500;
+			font-size:1.2rem;
+			color: #848484;
+			margin-left: 3rem;
+			margin-right: 1rem;
+		}
+		& input, & select{
+			font-family: Oswald, sans-serif;
+			font-weight: 500;
+			min-height: 2.5rem;
+			min-width: 25rem;
+			font-size:1.2rem;
+			padding: 0.5rem;
+			margin: 3rem 0;
+		}
+		&-int{
+			border: none;
+			background: #FFFFFF;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			border-radius: 5px;	
+		}
+	}
+}
+// оформление карточек каналов
+.tv-blue{
+	color: #60C2C2;
+}
+.tv-blue-a{
+	color: #60C2C2;
+	&:hover{
+		color: darken(#60C2C2, 20%);
+	}
+}
+.tv-card{
+	display: inline-block;
+	border: 2px solid #FD961E;
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
+	padding-left: 2rem;
+	width: 100%;
+	transition: all 1s;
+	&-wrap{
+		padding: 0;
+		padding-right: 1rem;
+		padding-bottom: 2rem;
+		display: inline-block;
+
+	}
+	&:hover{
+		box-shadow: 5px 4px 20px #FD961E;
+	}
+	&-caption{
+		display: inline-block;
+		margin-left: 2rem;
+	}
+	& h4{
+		display: inline-block;
+		font-family: Oswald, sans-serif;
+		font-weight: 500;
+	}
+	& p{
+		display: inline-block;
+		font-family: Oswald, sans-serif;
+		font-weight: 500;
+		font-size: 1.2rem;
+	}
+	& img{
+		height: 10rem;
+		display: inline-block;
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//phone
+.phone{
+	&-options{
+		margin-bottom: 2rem;
+		&-block{
+			background-color: #F9F9F9;
+			border-radius: 1rem;
+			padding: 2.5rem;
+			transition: all 1s;
+			height: 100%;
+			&:hover{
+				box-shadow: 5px 4px 20px rgba(253, 150, 30, 0.7);
+			}
+			button{
+				display: block;
+				margin: 0 auto;
+			}
+			& p{
+				font-family: Oswald, sans-serif;
+				font-size: 1.2rem;
+				letter-spacing: 0.04em;
+				text-align: center;
+				margin-bottom: 2rem;
+			}
+			& h3{
+				font-family: Oswald, sans-serif;
+				font-weight: 500;
+				color: #FD961E;
+				text-align: center;
+				margin-bottom: 1.5rem;
+			}
+		}
+		&-block-wrap{
+			padding: 1rem;
+		}
+		&-label{
+			p{
+				font-family: Oswald, sans-serif;
+				font-size: 1.3rem;
+				letter-spacing: 0.04em;
+				margin-left: 1rem;
+			}
+			&-one{
+				padding: 0.2rem;
+				border-bottom: 1px solid black;
+			}
+			&-two{
+				color: #8A8A8A;
+			}
+		}
+	}
+	&-offers{
+		h2{
+			font-family: Oswald, sans-serif;
+			font-weight: bold;
+		}
+		img{
+			display: inline-block;
+			max-width: 6rem;
+		}
+		p{
+			font-family: Oswald, sans-serif;
+			font-size: 1.3rem;
+			font-weight: 500;
+			display: inline-block;
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// connect
+.connect{
+	margin: 2rem 0;
+	font-family: Oswald, sans-serif;
+	letter-spacing: 0.04em;
+	&-form{
+		background-color: #f0f0f0;
+		border-radius: 1.5rem;
+		&-content{
+			
+			letter-spacing: 0.04em;
+			padding: 3rem;
+			& h1{
+				font-weight: bold;
+				margin-bottom: 2rem;
+			}
+		
+			& input{
+				display: block;
+				margin-bottom: 1rem;
+				width: 100%;
+				border-radius: 7px;
+				border: none;
+				padding: 1rem;
+				font-size: 1.2rem;
+			}
+			& p{
+				text-align: center;
+			}
+			& button{
+				display: block;
+				width: 80%;
+				margin: 2rem auto 1rem auto;
+			}
+		}
+	}
+	&-info{
+		width: 100%;
+		height: 100%;
+		background: url("../img/connect-img.png") center no-repeat;
+		border-radius: 2rem;
+		padding: 2.5rem;
+		&-section{
+			padding: 3rem;
+			background: rgba(255, 255, 255, 0.45);
+			height: 100%;
+			border-radius: 2rem;
+			& h2{
+				font-weight: bold;
+				margin-bottom: 2rem;
+			}
+			& p{
+				font-size: 1.4rem;
+				margin-bottom: 3rem;
+			}
+		}
+
+	}		
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//coverage
+.coverage{
+	font-family: Oswald, sans-serif;
+	margin-bottom: 3rem;
+	& th{
+		padding: 1rem;
+	}
+	& p{
+		font-weight: 500;
+		font-size: 1.3rem;
+	}
+	& table{
+		width: 100%;
+	}
+	&-img-block{
+		width: 100%;
+		height: 100%;
+		border-radius: 2rem;
+		background: url("../img/coverage-img.png") center no-repeat;
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//stock
+.stock{
+	margin-bottom: 3rem;
+	&-img-block{
+		width: 100%;
+		height: 100%;
+		border-radius: 2rem;
+		background: url("../img/stock-img.png") center no-repeat;
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// support
+.support{
+	& ul{
+		margin: 0;
+		margin-bottom: 7rem;
+		padding: 0;
+	}
+	& li{
+		display: inline-block;
+		list-style: none;
+		line-height: 170%;
+		padding-left: 1.5rem;
+		background: url(../img/support-marker.png) no-repeat left 50%;
+		background-size: 1rem;
+		margin-right: 2rem;
+		font-family: Oswald, sans-serif;
+		font-size: 1.5rem;
+		letter-spacing: 0.04em;
+		& a{
+			&:hover{
+			color: lighten(#000, 40%);
+			}
+		}
+	}
+	&-connect{
+		font-family: Oswald, sans-serif;
+		letter-spacing: 0.04em;
+		&-content{
+			margin-left: 5rem;
+			margin-bottom: 5rem;
+			margin-top: 1rem;
+		}
+		& h5{
+			font-weight: 500;
+			margin-bottom: 1rem;
+			margin-top: 2rem;
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// contacts
+.contacts{
+	margin-bottom: 3rem;
+	font-family: Oswald, sans-serif;
+	letter-spacing: 0.04em;
+	&-content{
+		margin-left: 5rem;
+		line-height: 1.7rem;
+	}
+	&-tels{
+		margin-top: 3rem;
+		img{
+			max-width: 4rem;
+			display: inline-block;
+			margin-right: 0.7rem;
+		}
+		table{
+			display: inline-block;
+		}
+		p{
+			margin: 0;
+			margin-right: 2rem;
+		}
+	}
+	&-social{
+		margin-top: 3rem;
+		img{
+			max-width: 4rem;
+			margin-right: 0.7rem;
+		}
+		p{
+			margin-right: 2rem;
+		}
+		
+	}
+
+	&-img-block{
+		width: 100%;
+		height: 100%;
+		border-radius: 2rem;
+		background: url("../img/contacts-img.png") center no-repeat;	
+	}	
+}
+
+// maps
+	.maps{
+		font-family: Oswald, sans-serif;
+		letter-spacing: 0.04em;
+		margin-bottom: 3rem;
+		p{
+			margin-bottom: 2rem;
+		}
+	}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Оформление модальных окон:
+
+// Заказать звонок
+.popup{
+	display: none;
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	
+	&-content{
+		min-width: 45rem;
+		position: fixed;
+		top: 30%;	
+		left: 50%;	
+		transform: translateX(-50%);
+		padding: 2rem 3.4rem;
+ 		box-shadow: 5px 4px 30px rgba(253, 150, 30, 0.2);
+ 		border-radius: 16px;
+ 		background-color: #fff;	
+	}
+	&-header{
+	 	font-family: Oswald, sans-serif;
+		font-size: 1.4rem;
+		text-align: center;
+		font-weight: bold;
+		margin-bottom: 1.5rem;
+		letter-spacing: 0.04rem;	
+	}
+	&-form input{
+		border: 0.5px solid #FD961E;
+		box-shadow: 0 0 10px rgba(253, 150, 30, 0.2) ;
+		border-radius: 5px;
+		margin-bottom: 1.5rem;
+		font-family: Oswald, sans-serif;
+		font-size: 1.2rem;
+		min-height: 2.5rem;
+		width: 100%;
+		display: block;
+		padding: 0.8rem;
+		letter-spacing: 0.07rem;
+	}
+	
+	&-close{
+		position: absolute;
+ 		background: url(../img/cross.png) center no-repeat;
+ 		border: none;
+ 		min-width: 1rem;
+ 		min-height: 1rem;
+	}
+}
+
+
+// Подключиться, Оплатить
+.index-connect-popup{
+	margin: 3rem 0;
+	&-content{
+		padding: 2rem 3.4rem;
+		box-shadow: 5px 4px 30px rgba(253, 150, 30, 0.2);
+		border-radius: 16px;
+
+	}
+	&-header{
+		font-family: Oswald, sans-serif;
+		font-size: 2rem;
+		font-weight: bold;
+		margin-bottom: 1.5rem;
+		letter-spacing: 0.04rem;	
+	}
+	&-form select, &-form .index-connect-popup-input {
+		border: none;
+		background-color: #F7F7F7;
+		font-family: Oswald, sans-serif;
+		border-radius: 5px;
+		margin-bottom: 1.5rem;
+		font-size: 1.2rem;
+		min-height: 4.5rem;
+		width: 90%;
+		display: block;
+		padding: 0.8rem;
+		letter-spacing: 0.07rem;
+		&::placeholder {
+			color: #B7B7B7;
+ 		}
+	}
+	&-form input{
+		display: inline-block !important;
+		margin-right: 1rem !important;
+		width: 40% !important;
+	}
+	&-checkbox{
+		max-width: 2rem;
+		display: inline-block;
+	}
+	& p{
+		font-family: Oswald, sans-serif;
+		font-size: 1.5rem;
+		color: #868686;
+	
+	}
+	& img{
+		max-width: 15rem;
+		margin: 1rem 0;	
+	}
+
+}
+.connect-popup-btn{
+	background-color: #FD961E ;
+	font-family: Oswald, sans-serif;
+	font-weight: bold ;
+	font-size: 1.5rem ;
+	letter-spacing: 0.06rem ;
+	color: #fff ;
+	padding: 1rem 4rem ;
+	&:hover{
+		color: darken(#fff, 10%) ;
+		text-decoration: none;
+		cursor: pointer;
+	}
+}
+ 
+// Подключиться (на вкладке интернет)
+.inet-popup{
+	display: none;
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	max-width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	&-content{
+		min-width: 45rem;
+		position: fixed;
+		top: 30%;	
+		left: 50%;	
+		transform: translateX(-50%);
+		padding: 2rem 3.4rem;
+ 		box-shadow: 5px 4px 30px rgba(253, 150, 30, 0.2);
+ 		border-radius: 16px;
+ 		background-color: #fff;	
+	}
+	&-close{
+		margin-left: -2rem;
+		margin-top: 0.5rem;
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// media запросы
+@media (max-width: 1200px) {
+	// header
+	.header{
+		&-sale{
+			&-text{
+			font-size: 1.5rem;
+			}
+			& img{
+				max-width: 3rem;
+			}
+		}
+		&-phone-text{
+			font-size: 1.4rem;
+		}
+	}
+
+	// head
+	.head{
+		&-text{
+			&-section{	
+				&:before{			    	
+			    	min-height: 13rem;			
+				}
+			}
+			&-btn1, &-btn2{
+				margin-top: 3rem;
+			}	
+		}
+	}
+	// index-news
+	.index-news{
+		min-height: 62.5rem;
+	}
+
+
+	// footer
+	.footer{
+		&-sale-text{
+			font-size: 0.7rem;
+		}
+		&-phone-text{
+			font-size: 0.7rem;
+		}
+		& table {
+			img{
+				display: none !important;
+			}
+			& p{
+				margin-left: 2rem;
+			}
+		}
+	}
+
+	//nav
+	.nav{
+		&-element, &-element-last{
+			border: none;
+			padding-left: 0;
+		}
+		
+		li{
+			list-style-type: disc;
+			padding-left: 0;
+			margin-left: 3rem;
+		
+		}
+	}
+	//tv
+	.tv{
+		&-info{
+			&-img-cont{				
+				width: 45rem !important;
+				height: 35rem;
+				
+			}
+			img{
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+				border-radius: 2rem;
+			}
+		}
+	}
+	// phone
+	.phone-info {
+		& img {
+	   	object-fit: cover;
+	    width: 100%;
+  	    height: 100%;
+    	border-radius: 2rem;
+    	}
+    	&-img-cont{
+    		height: 43rem;
+    	}
+	}
+	
+}	
+
+@media (max-width: 992px){
+	// header
+	.nav-wrap{
+		margin-top: 10rem;
+	}
+	.header-sale-text{
+		font-size: 1.8rem;
+	}
+	.head{
+		&-text{
+			&-section{	
+				&:before{			    	
+			    	min-height: 15rem;			
+				}
+			}
+			&-btn1, &-btn2{
+				margin-top: 3rem;
+			}	
+		}
+	}
+
+	// footer
+	// footer
+	.footer{
+		&-sale-text{
+			font-size: 1rem;
+		}
+		&-phone-text{
+			font-size: 1rem;
+		}
+		& table {
+			img{
+				display: inline-block !important;
+			}
+			& p{
+				margin-left: 0;
+			}
+		}
+	}
+	//tv
+	.tv{
+		&-info{
+			&-img-cont{	
+
+				img{
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+				border-radius: 2rem;
+				display: block;
+				margin: 0 auto;
+			}
+			}
+
+		}
+	}
+	// connect
+	.connect{
+		margin-bottom: 4rem;
+		&-info{
+			margin-top: 2rem;
+		}
+	}
+}
+
+@media (max-width: 768px){
+	// header
+	.header{
+		&-logo-img{
+			display: block;
+			margin: 0 auto;
+			
+		}
+	}
+
+	// head
+	.head{
+		&-text{
+			&-section{	
+				&:before{			    	
+			    	min-height: 15rem;			
+				}
+			}
+			&-btn1{
+				margin: 0;
+				margin-top: 3rem;
+			}
+			&-btn2{
+				margin: 0;
+				margin-top: 1rem;
+			}	
+		}
+	}
+
+	// nav
+	.nav{
+		&-wrap{
+		margin-top: 35rem;
+		}
+	}
+	.sales-wrap, .phone-wrap{
+		display: flex;
+		justify-content: center;
+		& img{	
+			margin: auto 0.5rem;
+		}
+	}
+	.header-call{
+		display: block;
+		margin: 0 auto;
+	}
+	//tv
+	//tv
+	.tv{
+		&-info{
+			&-img-cont{				
+				width: 100% !important;
+			}
+			
+		}
+	}
+}
+
+@media (max-width: 576px){
+	// head
+	.head{
+		&-text{
+			&-section{	
+				&:before{			    	
+			    	min-height: 21rem;			
+				}
+			}
+			&-btn1{
+				margin: 0;
+				margin-top: 3rem;
+			}
+			&-btn2{
+				margin: 0;
+				margin-top: 1rem;
+			}	
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
